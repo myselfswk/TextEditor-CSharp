@@ -13,6 +13,7 @@ namespace TextEditor_CSharp
 {
     public partial class txtEditor : Form
     {
+        String fileLocation = "";
         public txtEditor()
         {
             InitializeComponent();
@@ -95,10 +96,57 @@ namespace TextEditor_CSharp
             saveFileDialog1.FilterIndex = 2;
             saveFileDialog1.RestoreDirectory = true;
 
+            if (fileLocation == "")
+            {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    File.WriteAllText(saveFileDialog1.FileName, rTxtBox.Text);
+                }
+                fileLocation = saveFileDialog1.FileName;
+            }
+            else
+            {
+                File.WriteAllText(fileLocation, rTxtBox.Text);
+            }
+            
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                rTxtBox.Text = File.ReadAllText(openFileDialog1.FileName);
+            }
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 File.WriteAllText(saveFileDialog1.FileName, rTxtBox.Text);
             }
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            printDialog1.ShowDialog();
+        }
+
+        private void cutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            rTxtBox.Cut();
+        }
+
+        private void copyToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            rTxtBox.Copy();
+        }
+
+        private void pasteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            rTxtBox.Paste();
         }
     }
 }
