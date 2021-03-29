@@ -1,0 +1,10 @@
+F:\VPL Assignments\TextEditor-CSharp\bin\Debug\TextEditor-CSharp.exe.config
+F:\VPL Assignments\TextEditor-CSharp\bin\Debug\TextEditor-CSharp.exe
+F:\VPL Assignments\TextEditor-CSharp\bin\Debug\TextEditor-CSharp.pdb
+F:\VPL Assignments\TextEditor-CSharp\obj\Debug\TextEditor-CSharp.csprojAssemblyReference.cache
+F:\VPL Assignments\TextEditor-CSharp\obj\Debug\TextEditor_CSharp.txtEditor.resources
+F:\VPL Assignments\TextEditor-CSharp\obj\Debug\TextEditor_CSharp.Properties.Resources.resources
+F:\VPL Assignments\TextEditor-CSharp\obj\Debug\TextEditor-CSharp.csproj.GenerateResource.cache
+F:\VPL Assignments\TextEditor-CSharp\obj\Debug\TextEditor-CSharp.csproj.CoreCompileInputs.cache
+F:\VPL Assignments\TextEditor-CSharp\obj\Debug\TextEditor-CSharp.exe
+F:\VPL Assignments\TextEditor-CSharp\obj\Debug\TextEditor-CSharp.pdb
